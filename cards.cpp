@@ -14,17 +14,18 @@ const int king =13;
 const int ace= 14;
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 struct card
-[
+{
+
 int number;  
 int suit;
-}
+};
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 int main()
 {
 card temp,chosen,prize;
 int position;
 
-card card1 = {7, cubs};
+card card1 = {7, clubs};
 cout<< "Card 1 is the 7 of clubs\n";
 
 card card2 = {jack,hearts};
@@ -36,12 +37,12 @@ cout<<"Card 3 is the ace of spades\n";
 prize = card3; 
 
 cout<<"i'm swapping card 1 and card 3 \n";
-temp card3; card3 = card2; card1=temp;
+temp = card3; card3 = card2; card1=temp;
 
 cout<<"i'm swapping card2 and card3 \n";
 temp = card2;card2 = card1; card2=temp;
 
-cout<<"i'm swapping card 1 and card 2 \n"
+cout<<"i'm swapping card 1 and card 2 \n";
 temp= card2; card2 = card1; card1 = temp;
 
 cout<<"Now,where {1,2, or 3 } is the ace of spades? ";
